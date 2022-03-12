@@ -113,6 +113,7 @@ $(PROGS): %$(PROGSSUF)$(EXESUF): %$(PROGSSUF)_g$(EXESUF)
 %$(PROGSSUF)_g$(EXESUF): %.o $(FF_DEP_LIBS)
 	$(LD) $(LDFLAGS) $(LD_O) $(OBJS-$*) $(FF_EXTRALIBS)
 
+
 OBJDIRS += tools
 
 -include $(wildcard tools/*.d)

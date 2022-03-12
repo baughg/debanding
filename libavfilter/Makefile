@@ -50,6 +50,7 @@ OBJS = allfilters.o                                                     \
        video.o                                                          \
 
 
+
 OBJS-$(CONFIG_AVCODEC)                       += avcodec.o
 
 OBJS-$(CONFIG_ACONVERT_FILTER)               += af_aconvert.o
@@ -214,6 +215,8 @@ OBJS-$(CONFIG_VIDSTABTRANSFORM_FILTER)       += vidstabutils.o vf_vidstabtransfo
 OBJS-$(CONFIG_VIGNETTE_FILTER)               += vf_vignette.o
 OBJS-$(CONFIG_W3FDIF_FILTER)                 += vf_w3fdif.o
 OBJS-$(CONFIG_YADIF_FILTER)                  += vf_yadif.o
+OBJS-$(CONFIG_DEBAND_FILTER)                += vf_pixel_label.o
+OBJS-$(CONFIG_DEBAND_FILTER)                += vf_deband.o
 OBJS-$(CONFIG_ZMQ_FILTER)                    += f_zmq.o
 
 OBJS-$(CONFIG_CELLAUTO_FILTER)               += vsrc_cellauto.o

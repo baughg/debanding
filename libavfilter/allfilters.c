@@ -105,6 +105,7 @@ void avfilter_register_all(void)
 
     REGISTER_FILTER(ANULLSINK,      anullsink,      asink);
 
+    REGISTER_FILTER(DEBAND,deband,vf);
     REGISTER_FILTER(ALPHAEXTRACT,   alphaextract,   vf);
     REGISTER_FILTER(ALPHAMERGE,     alphamerge,     vf);
     REGISTER_FILTER(ASS,            ass,            vf);
